@@ -1,0 +1,65 @@
+
+#THIS IS R EDITOR & CONSOLE
+#INTRODUCTION TO R
+print("Hello")
+
+#HOW TO INSTALL R PACKAGE?
+#PLEASESET THE CRAN MIRROR
+
+#TO INSTALL R PACKAGE
+install.packages("MASS")
+
+#HOW TO LOAD/CALL THE PACKAGE/LIBRARY
+library(MASS)
+
+#PLEASE INSTALL fBasics package
+library(fBasics)
+
+#try
+x=40
+
+#to check type of object
+is.numeric(x)
+is.character(x)
+str(x) #to know the structure of object x
+
+#how to check for missing value
+is.na(x)
+
+#try arithmetic opr
+x=10
+y=2
+
+x+y
+x-y
+x*y
+
+x=5
+y=16
+
+y%%x #modulus/remainder/balance
+y%/%x #Normal division
+
+#Relational operator
+x<y
+x>y
+x<=y
+x>=y
+y==2
+x!=1 #not equal]
+
+#R as a calculator
+abs(x-y)
+sqrt(y)
+3^10
+log(10)
+log10(100)
+log10(10)
+pi
+
+#round off
+round(pi,1) #round off to 1 dp
+round(pi,2) #round off to 2 dp
+
+floor(pi) 
+ceiling(pi)
