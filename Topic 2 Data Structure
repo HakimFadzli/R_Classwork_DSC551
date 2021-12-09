@@ -1,0 +1,55 @@
+#Data Structure
+#1)Vectors
+
+x=c(1,3,5,7,9)
+
+is.vector(x) #to check whether data in a form of vector
+is(x)   #to check data type and structure
+
+#to select the element of a vector
+x=c(1,4,5,3,9,10,12)
+
+x[5]#print 5th 
+x[1:3] #print the st til 3rd element inside object
+x[c(1,2,3)]
+
+x[5]=100 #to replace the 5th element with 100
+edit(x) #another method of replacing element in an object
+
+y=x<8
+
+x[y]
+x[x<8]
+x[-2] #removing 2nd element inside object x
+length(x)#to check no of observation
+
+x[-c(1,2)] #to remove elemnent in 1st and 2nd place
+x[-c(2,4)] #to remove elemen in 2nd and 4th place
+
+#Carried out operations in vectors
+x=c(1,3,5,7,9)
+y=c(-1,-3,-5,7,-9)
+z=c(3,9)
+
+2*x
+y^2
+3^y
+x+y
+x+z #this is wrong but it still outputs the result, because the no of element in it's vector is not the same
+
+#Functions in the vector
+
+mean(x) # to compute mean
+var(x)#compute variance
+mean(x)
+sd(x)#std 
+sum(x)
+hist(x) #display histogram
+min(x) #compute min
+max(x) #compute max
+cumsum(x) #cumulate addition
+cumprod(x) #cumulative product
+diff(x)
+identical(x,y) 
+
+
