@@ -1,0 +1,36 @@
+newdata=data.frame(names,gender,age,occupation)
+
+x=matrix(c(4,5,6,7),nrow=2)
+
+colnames(x)=c("V1","V2")
+
+#convert a matrix into a data frame
+data2=data.frame(x)
+
+#to add another variable
+data2=data.frame(x,V3=c(TRUE,FALSE))
+#or
+#fromt the matrix,convert into a dataset
+
+V3=c(TRUE,FALSE)
+data2=cbind(data2,V3)
+
+#to add another data/observation
+data2=rbind(data2,list(V1=9,V2=8,V3=TRUE))
+
+
+#BMI EXERCISE
+height=c(175,165,150,155,168,153,165,177,180,164,150)
+weight
+
+
+#(a)
+student=data.frame(height,weight,sleep)
+bmi=weight/((height/100)^2)
+bmi=round(bmi,2)
+
+student=cbind(student,bmi)
+
+#or
+
+student=cbind(height,weight,sleep,bmi)
